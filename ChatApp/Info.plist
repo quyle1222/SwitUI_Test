@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>stream_chat_id</key>
+	<string>${STREAM_CHAT_ID}</string>
+	<key>stream_chat_secret</key>
+	<string>${STREAM_CHAT_SECRET}</string>
+	<key>stream_chat_token</key>
+	<string>${STREAM_CHAT_TOKEN}</string>
+	<key>enviroment_mode</key>
+	<string>${ENVIRONMENT_MODE}</string>
+</dict>
+</plist>

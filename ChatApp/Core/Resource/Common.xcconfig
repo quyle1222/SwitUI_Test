@@ -1,0 +1,12 @@
+//
+//  Common.xcconfig
+//  ChatApp
+//
+//  Created by TuPT on 23/11/2023.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+STREAM_CHAT_ID = 1273020
+STREAM_CHAT_TOKEN = adqh66p965pq
+STREAM_CHAT_SECRET = hv925v496bqqju8d6hgwz2cgtwvkngbu4k7ta2jkg3fyq6ry3p4wzwsn2pn6fqru
