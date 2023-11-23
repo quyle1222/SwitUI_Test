@@ -6,21 +6,23 @@
 //
 
 import SwiftUI
-import StreamChatSwiftUI
 
 struct HomeView: View {
-    private enum Const {
-        static let title = "Channel List"
-    }
-    
     @EnvironmentObject var mainViewModel: MainViewModel
-    
+    @StateObject var viewModel: HomeViewModel
+
+    init () {
+        _viewModel = StateObject(wrappedValue: HomeViewModel())
+    }
+
     var body: some View {
         ZStack {
             VStack(alignment: .center) {
-                ChatChannelListScreen(title: Const.title)
+                viewModel.channelList
+            }
+            .onAppear {
+                
             }
         }
     }
-    
 }

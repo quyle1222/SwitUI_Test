@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		362DA8292B0F98A40070161B /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362DA8282B0F98A40070161B /* LoadingView.swift */; };
+		362DA82D2B0F999E0070161B /* ChannelListFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362DA82C2B0F999E0070161B /* ChannelListFactory.swift */; };
+		362DA8312B0F9D430070161B /* ChannelListViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362DA8302B0F9D430070161B /* ChannelListViewProtocol.swift */; };
+		362DA8342B0F9E130070161B /* CustomNoChannelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362DA8332B0F9E130070161B /* CustomNoChannelView.swift */; };
+		362DA8362B0F9ECF0070161B /* CustomListChannelsLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362DA8352B0F9ECF0070161B /* CustomListChannelsLoadingView.swift */; };
 		8414141D2B035AA700858680 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8414141C2B035AA700858680 /* Assets.xcassets */; };
 		841414212B035AA700858680 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 841414202B035AA700858680 /* Preview Assets.xcassets */; };
 		841414472B03602600858680 /* NetworkUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841414462B03602600858680 /* NetworkUtils.swift */; };
@@ -46,6 +51,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		362DA8282B0F98A40070161B /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		362DA82C2B0F999E0070161B /* ChannelListFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelListFactory.swift; sourceTree = "<group>"; };
+		362DA8302B0F9D430070161B /* ChannelListViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelListViewProtocol.swift; sourceTree = "<group>"; };
+		362DA8332B0F9E130070161B /* CustomNoChannelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNoChannelView.swift; sourceTree = "<group>"; };
+		362DA8352B0F9ECF0070161B /* CustomListChannelsLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomListChannelsLoadingView.swift; sourceTree = "<group>"; };
 		841414152B035AA500858680 /* ChatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8414141C2B035AA700858680 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		841414202B035AA700858680 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -97,6 +107,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		362DA8272B0F98960070161B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				362DA8282B0F98A40070161B /* LoadingView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		362DA82B2B0F99780070161B /* CustomChat */ = {
+			isa = PBXGroup;
+			children = (
+				362DA82F2B0F9D2E0070161B /* ChannelListView */,
+			);
+			path = CustomChat;
+			sourceTree = "<group>";
+		};
+		362DA82F2B0F9D2E0070161B /* ChannelListView */ = {
+			isa = PBXGroup;
+			children = (
+				362DA8322B0F9DEF0070161B /* Components */,
+				362DA82C2B0F999E0070161B /* ChannelListFactory.swift */,
+				362DA8302B0F9D430070161B /* ChannelListViewProtocol.swift */,
+			);
+			path = ChannelListView;
+			sourceTree = "<group>";
+		};
+		362DA8322B0F9DEF0070161B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				362DA8332B0F9E130070161B /* CustomNoChannelView.swift */,
+				362DA8352B0F9ECF0070161B /* CustomListChannelsLoadingView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		8414140C2B035AA500858680 = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +166,7 @@
 				8438E12C2B0F2D020037DE3E /* Info.plist */,
 				841414652B0362FA00858680 /* App */,
 				841414442B03601500858680 /* Core */,
+				362DA82B2B0F99780070161B /* CustomChat */,
 				84E8218D2B047688000FE891 /* MainTab */,
 				8458FB6E2B04A29D00FDD733 /* Home */,
 				84E8218C2B04767D000FE891 /* PokemonExplore */,
@@ -293,6 +339,7 @@
 		8458FB6F2B04A2A800FDD733 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				362DA8272B0F98960070161B /* Components */,
 				8458FB722B04A2C300FDD733 /* HomeView.swift */,
 				8458FB742B04A2CC00FDD733 /* HomeViewModel.swift */,
 			);
@@ -528,15 +575,20 @@
 				841414672B03630500858680 /* PokeDexApp.swift in Sources */,
 				841414572B03612D00858680 /* PokeDexDataSource.swift in Sources */,
 				8438E1202B0F28240037DE3E /* MainViewModel.swift in Sources */,
+				362DA82D2B0F999E0070161B /* ChannelListFactory.swift in Sources */,
 				84E821942B047F95000FE891 /* PokemonDetailView.swift in Sources */,
 				8458FB692B049F3600FDD733 /* PokemonDetailEntity.swift in Sources */,
 				8495C1512B05CBC100433B4E /* PokemonDetailResponse.swift in Sources */,
 				8438E1232B0F285B0037DE3E /* StreamChatManager.swift in Sources */,
+				362DA8292B0F98A40070161B /* LoadingView.swift in Sources */,
 				84E8218F2B04769B000FE891 /* MainTabView.swift in Sources */,
+				362DA8312B0F9D430070161B /* ChannelListViewProtocol.swift in Sources */,
 				8414145D2B03622E00858680 /* PokeDexRepository.swift in Sources */,
+				362DA8362B0F9ECF0070161B /* CustomListChannelsLoadingView.swift in Sources */,
 				841414492B03603F00858680 /* Constants.swift in Sources */,
 				8458FB6D2B049FB600FDD733 /* PokemonDetailDataSource.swift in Sources */,
 				84E821962B047F9F000FE891 /* PokemonDetailViewModel.swift in Sources */,
+				362DA8342B0F9E130070161B /* CustomNoChannelView.swift in Sources */,
 				8458FB652B049DE400FDD733 /* GetPokemonDetailUseCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
