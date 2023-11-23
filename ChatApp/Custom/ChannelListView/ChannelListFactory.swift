@@ -25,6 +25,10 @@ class ChannelListFactory: ChannelListViewProtocol {
         Divider()
     }
 
+    func makeChannelListHeaderViewModifier(title: String) -> some ChannelListHeaderViewModifier {
+        CustomChannelModifier(title: title)
+    }
+
     func makeLoadingView() -> CustomListChannelsLoadingView {
         CustomListChannelsLoadingView()
     }

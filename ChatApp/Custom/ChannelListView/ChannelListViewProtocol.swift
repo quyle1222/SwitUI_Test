@@ -10,8 +10,9 @@ import SwiftUI
 
 protocol ChannelListViewProtocol: ViewFactory
 where NoChannels: View,
-      LoadingContent: View {
-
+      LoadingContent: View,
+      HeaderViewModifier: ChannelListHeaderViewModifier {
     func makeLoadingView() -> LoadingContent
     func makeNoChannelsView() -> NoChannels
+    func makeChannelListHeaderViewModifier(title: String) -> HeaderViewModifier
 }

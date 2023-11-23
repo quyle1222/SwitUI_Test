@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import StreamChatSwiftUI
 
 struct HomeView: View {
     @EnvironmentObject var mainViewModel: MainViewModel
