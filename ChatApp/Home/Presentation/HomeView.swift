@@ -6,15 +6,21 @@
 //
 
 import SwiftUI
+import StreamChatSwiftUI
 
 struct HomeView: View {
+    private enum Const {
+        static let title = "Channel List"
+    }
+    
     @EnvironmentObject var mainViewModel: MainViewModel
-
+    
     var body: some View {
         ZStack {
             VStack(alignment: .center) {
-                Text(AppEnvironments.shared.streamChatToken ?? "")
+                ChatChannelListScreen(title: Const.title)
             }
         }
     }
+    
 }
