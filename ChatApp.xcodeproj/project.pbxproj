@@ -274,26 +274,10 @@
 			isa = PBXGroup;
 			children = (
 				84F5FDDE2B0F47500079E8B8 /* Common.xcconfig */,
-				8438E1292B0F2C620037DE3E /* Release */,
-				8438E1282B0F2C5D0037DE3E /* Debug */,
-			);
-			path = Resource;
-			sourceTree = "<group>";
-		};
-		8438E1282B0F2C5D0037DE3E /* Debug */ = {
-			isa = PBXGroup;
-			children = (
+				8438E12A2B0F2C750037DE3E /* Release.xcconfig */,
 				8438E12B2B0F2C870037DE3E /* Debug.xcconfig */,
 			);
-			path = Debug;
-			sourceTree = "<group>";
-		};
-		8438E1292B0F2C620037DE3E /* Release */ = {
-			isa = PBXGroup;
-			children = (
-				8438E12A2B0F2C750037DE3E /* Release.xcconfig */,
-			);
-			path = Release;
+			path = Resource;
 			sourceTree = "<group>";
 		};
 		8458FB6E2B04A29D00FDD733 /* Home */ = {

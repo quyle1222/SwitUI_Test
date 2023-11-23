@@ -15,7 +15,7 @@ final class StreamChatManager {
 
     init() {
          chatClient = {
-            var config = ChatClientConfig(apiKey: .init("adqh66p965pq"))
+            var config = ChatClientConfig(apiKey: .init(AppEnvironments.shared.streamChatToken))
             config.isLocalStorageEnabled = true
             config.applicationGroupIdentifier = "group.io.getstream.iOS.ChatApp"
             let client = ChatClient(config: config)
