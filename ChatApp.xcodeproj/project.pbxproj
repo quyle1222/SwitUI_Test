@@ -115,12 +115,12 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
-		362DA82B2B0F99780070161B /* CustomChat */ = {
+		362DA82B2B0F99780070161B /* Custom */ = {
 			isa = PBXGroup;
 			children = (
 				362DA82F2B0F9D2E0070161B /* ChannelListView */,
 			);
-			path = CustomChat;
+			path = Custom;
 			sourceTree = "<group>";
 		};
 		362DA82F2B0F9D2E0070161B /* ChannelListView */ = {
@@ -166,7 +166,7 @@
 				8438E12C2B0F2D020037DE3E /* Info.plist */,
 				841414652B0362FA00858680 /* App */,
 				841414442B03601500858680 /* Core */,
-				362DA82B2B0F99780070161B /* CustomChat */,
+				362DA82B2B0F99780070161B /* Custom */,
 				84E8218D2B047688000FE891 /* MainTab */,
 				8458FB6E2B04A29D00FDD733 /* Home */,
 				84E8218C2B04767D000FE891 /* PokemonExplore */,

@@ -19,9 +19,18 @@ struct HomeView: View {
         ZStack {
             VStack(alignment: .center) {
                 viewModel.channelList
+                    .onAppear {
+                        viewModel.loadChannelList()
+                    }
             }
-            .onAppear {
-                
+            .alert(isPresented: $viewModel.isPresentAlert) {
+                Alert(
+                    title: Text("Error"),
+                    message: Text(viewModel.channelListError?.localizedDescription ?? "Unknown Error"),
+                    dismissButton: .default(Text("OK")) {
+                        viewModel.isPresentAlert = false // Dismiss the alert
+                    }
+                )
             }
         }
     }
